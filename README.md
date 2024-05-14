@@ -1,28 +1,23 @@
 ```markdown
-package main
+namespace ProfileGitHub;
 
-import (
- "fmt"
-)
+public class SoftwareEngineer
+{
+ private string Name { get; set; } = "Egor";
 
-type SoftwareEngineer struct {
- Name         string
- Role         string
- LanguageSpoken []string
+ private string Role { get; set; } = "Intern .NET Developer";
+
+ private List<string> Language_Spoken { get; set; } = new() { "RUS", "EN" };
+
+ public string Hello_Everyone() => @$"I’m {Name} 🎓 and I’m a {Role} 💻. Welcome to my github profile 🕵️!";
 }
-
-func (se *SoftwareEngineer) HelloEveryone() string {
- return fmt.Sprintf("I’m %s 🎓 and I’m a %s 💻. Welcome to my github profile 🕵️!", se.Name, se.Role)
-}
-
-func main() {
- me := SoftwareEngineer{
-  Name:         "Egor",
-  Role:         "Golang Developer",
-  LanguageSpoken: []string{"RUS", "EN"},
+internal class Program
+{
+ static void Main(string[] args)
+ {
+  SoftwareEngineer Me = new();
+  Me.Hello_Everyone();
  }
-
- fmt.Println(me.HelloEveryone())
 }
 ```
    [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=EgrShishov&layout=compact&theme=white)](https://github.com/EgrShishov/github-readme-stats)
