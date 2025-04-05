@@ -1,3 +1,4 @@
+```markdown
 namespace ProfileGitHub;
 
 public class SoftwareEngineer
@@ -24,3 +25,5 @@ internal class Program
         Console.WriteLine(me.HelloEveryone());
     }
 }
+```
+   [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=EgrShishov&layout=compact&theme=white)](https://github.com/EgrShishov/github-readme-stats)
