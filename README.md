@@ -3,27 +3,25 @@ namespace ProfileGitHub;
 
 public class SoftwareEngineer
 {
-    public required string Name { get; init; } = "Egor";
+    public required string Name { get; init; } = "Yahor";
 
-    public required string Role { get; init; } = "Intern .NET Developer at T-Team Belarus";
+    public required string Surname { get; init; } = "Shyshou";
 
-    public List<string> LanguagesSpoken { get; init; } = ["RUS", "EN"];
+    public required string Role { get; init; } = "Junior+ .NET Developer at T-Team Belarus";
+
+    public IReadOnlyList<string> LanguagesSpoken { get; init; } = [ "RUS", "EN" ];
     
     public string Description { get; init; } = "I am passionate about delivering high-quality solutions, leveraging industry best practices, and continuously improving my skills.";
 
-    public string HelloEveryone() => $"""
-        I'm {Name} 🎓 and I'm a {Role} 💻. Welcome to my github profile 🕵️!
+    public string SayHello() => $"""
+        Hello! I'm {Name} 🎓 and I'm a {Role} 💻. Welcome to my github profile 🕵️!
         {Description}
         """;
 }
 
-internal class Program
-{
-    static void Main(string[] args)
-    {
-        var me = new SoftwareEngineer();
-        Console.WriteLine(me.HelloEveryone());
-    }
-}
+
+var me = new SoftwareEngineer();
+Console.WriteLine(me.SayHello());
+
 ```
    [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=EgrShishov&layout=compact&theme=white)](https://github.com/EgrShishov/github-readme-stats)
