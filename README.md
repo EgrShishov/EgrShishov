@@ -24,4 +24,3 @@ var me = new SoftwareEngineer();
 Console.WriteLine(me.SayHello());
 
 ```
-   [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=EgrShishov&layout=compact&theme=white)](https://github.com/EgrShishov/github-readme-stats)
